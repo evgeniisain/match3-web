@@ -12,7 +12,7 @@ class UserService implements UserServiceInterface
     protected $userRepository;
     protected $validator;
 
-    protected function __construct(UserRepository $userRepository, ValidatorInterface $validator)
+    public function __construct(UserRepository $userRepository, ValidatorInterface $validator)
     {
         $this->userRepository = $userRepository;
         $this->validator = $validator;

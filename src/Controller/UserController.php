@@ -28,7 +28,5 @@ class UserController extends AbstractController {
     {
         $username = $this->get(static::AUTH_USERNAME);
         $password = $this->get(static::AUTH_PASSWORD);
-
-        // todo
     }
 }
