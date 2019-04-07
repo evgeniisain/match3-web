@@ -22,6 +22,14 @@ class UserRepository extends ServiceEntityRepository
     }
 
     /**
+     * @param string $username
+     * @return User
+     */
+    public function findByUsername(string $username): User {
+        return $this->findOneBy(['username' => $username]);
+    }
+
+    /**
      * @param User $user
      * @throws ORMException
      * @throws OptimisticLockException
